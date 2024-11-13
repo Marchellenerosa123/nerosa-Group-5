@@ -1,0 +1,144 @@
+
+package group5labquiz;
+
+import java.util.Scanner;
+
+public class Group5LabQuiz {
+
+   
+    public static void main(String[] args) {
+      
+       int score = 0;   
+       boolean tr = true;
+       char answer, char1;
+       Scanner scanner;
+       scanner = new Scanner(System.in);
+       
+       
+      while(tr){
+          try {
+              
+      //1st Question
+       String Fqeust;
+        System.out.print("First question: " + '\n');
+      System.out.println("What is the capital city of the philippines?" ); 
+      System.out.println("A. Davao       B. Manila " ); 
+      System.out.println("C. Mandug      D. Quezon " );       
+      System.out.print("Enter your answer: ") ;
+       String answer1 = scanner.nextLine();
+      
+     
+       
+      if (answer1.contains("b") || answer1.contains("B")){
+          System.out.println("Your Answer is correct!");
+          score += 1;
+     }
+      
+      else {
+          System.out.println("Your Answer is incorrect!");
+          System.out.println("The correct answer is Letter B");
+          score += 0;
+      }
+      
+      //2nd Question
+      System.out.print("\nSecond question: " + '\n');
+       String Squest;
+      System.out.println("Who made Mona Lisa?");
+      System.out.println("A. Chaelyn Nerosa       B. Leonardo da Vinci  " ); 
+      System.out.println("C. Van Gough            D. Pablo Picasso " ); 
+      System.out.print("Enter your answer: " );
+      String answer2 = scanner.nextLine();
+      
+      if (answer2.contains("b") || answer2.contains("B")){
+          System.out.println("Your Answer is correct!");
+          score += 1;
+     }
+      
+      else {
+          System.out.println("Your Answer is incorrect!");
+          System.out.println("The correct answer is Letter B");
+          
+      }
+      
+      //3rd Question
+      System.out.print("\nThird question: " + '\n');
+       String Tquest;
+      System.out.println("Who is the first president of the Philippines?");
+      System.out.println("A. Manuel Quezon       B. Rodrigo Duterte  " ); 
+      System.out.println("C. Lloyd Pantinople    D. Noynoy Aquino " ); 
+      System.out.print("Enter your answer: ");
+      String answer3 = scanner.nextLine();
+      
+      if (answer3.contains("a") || answer3.contains("A")){
+          System.out.println("Your Answer is correct!");
+          score += 1;
+     }
+      
+      else {
+          System.out.println("Your Answer is incorrect!");
+          System.out.println("The correct answer is Letter A");
+          
+      }
+      
+      //4th Question
+      System.out.print("\nFourth question: " + '\n');
+       String Frquest;
+      System.out.println("What is the first computer virus in the Philippines?");
+      System.out.println("A. iloveyou worm       B. umaasapaasa  " ); 
+      System.out.println("C. Trojan Horses       D. Hello world worm " ); 
+      System.out.print("Enter your answer: ");
+      String answer4 = scanner.nextLine();
+      
+      if (answer4.contains("a") || answer4.contains("A")){
+          System.out.println("Your Answer is correct!");
+          score += 1;
+     }
+      
+      else {
+          System.out.println("Your Answer is incorrect!");
+          System.out.println("The correct answer is Letter A");
+          
+      }
+      
+       //5th Question
+      System.out.print("\nFift question: " + '\n');
+       String Ffquest;
+      System.out.println("What is the answer of the following question?");
+      System.out.println("nganong dili ako?");
+      System.out.println("A. why         B. ngano?  " ); 
+      System.out.println("C. bakit?      D. nganong ikaw man? " ); 
+      System.out.print("Enter your answer: ");
+      String answer5 = scanner.nextLine();
+      
+      if (answer5.contains("d") || answer5.contains("D")){
+          System.out.println("Your Answer is correct!");
+          score += 1;
+     }
+      
+      else {
+          System.out.println("Your Answer is incorrect!");
+          System.out.println("The correct answer is Letter D");
+          
+          Scanner scan = new Scanner(System.in);
+          char ok;
+          System.out.println("Wanna retake?");
+          ok = scan.next().charAt(0);
+          
+          if(ok == 'y' || ok == 'Y'){
+              
+          }else if(ok == 'n' || ok == 'N'){
+              System.out.println("Thank You for taking the quiz");
+              return;
+      }
+      }
+          } catch (Exception e) {
+                  System.err.println("an error occured:" + e.getMessage());
+          }{
+              
+          }
+
+      }
+    
+    }
+    
+}
